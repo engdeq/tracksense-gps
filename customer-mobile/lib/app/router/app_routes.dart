@@ -1,0 +1,24 @@
+abstract final class AppRoutes {
+  static const splash = '/splash';
+  static const onboarding = '/onboarding';
+  static const login = '/login';
+  static const forgotPassword = '/forgot-password';
+  static const resetPassword = '/reset-password';
+  static const profileSetup = '/profile-setup';
+  static const sessionExpired = '/session-expired';
+  static const home = '/home';
+  static const vehicles = '/vehicles';
+  static const liveMap = '/live-map';
+  static const trips = '/trips';
+  static const profileTab = '/profile-tab';
+  static const vehicleDetails = '/vehicles/:id';
+  static const devices = '/devices';
+  static const deviceDetails = '/devices/:id';
+  static const tripDetails = '/trips/:id';
+  static const tripPlayback = '/trips/:id/playback';
+  static const reports = '/reports';
+  static const notifications = '/notifications';
+  static const settings = '/settings';
+  static const editProfile = '/edit-profile';
+  static const changePassword = '/change-password';
+}
