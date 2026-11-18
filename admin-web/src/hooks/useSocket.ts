@@ -2,7 +2,9 @@ import { useEffect } from 'react'
 import { io, type Socket } from 'socket.io-client'
 import { getStoredTokens } from '@/api/client'
 
-const WS_URL = import.meta.env.VITE_WS_URL ?? 'http://localhost:4000'
+const WS_URL =
+  import.meta.env.VITE_WS_URL ||
+  (typeof window !== 'undefined' ? window.location.origin : 'http://localhost:4000')
 
 let shared: Socket | null = null
 
